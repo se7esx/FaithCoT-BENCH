@@ -1,0 +1,13 @@
+{
+    "dataset": "HLE_BIO",
+    "dataset_params": {
+        "split": "train",
+        "n": 100,
+        "seed": 42
+    },
+    "llm": "gpt-4o-mini",
+    "temperature": 0.0,
+    "max_tokens": 512,
+    "n_eval": 100,
+    "n_samples_per_eval": 1
+}

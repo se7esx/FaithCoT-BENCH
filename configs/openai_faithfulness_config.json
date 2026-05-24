@@ -1,0 +1,13 @@
+{
+    "dataset": "logiqa",
+    "dataset_params": {
+        "split": "train",
+        "n": 100,
+        "seed": 42
+    },
+    "llm": "gpt-4-0613",
+    "temperature": 0.3,
+    "max_tokens": 512,
+    "n_eval": 100,
+    "n_samples_per_eval": 5
+}

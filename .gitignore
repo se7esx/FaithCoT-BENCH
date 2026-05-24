@@ -1,0 +1,40 @@
+# Environment & secrets
+.env
+*.key
+huggingface_api_key.txt
+
+# Results (large output directories)
+results/
+intervention_results/
+results_firstanswer/
+results_adding_mistakes/
+icl_configs/
+ft_configs/
+figures/
+
+# Data
+datasets/
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

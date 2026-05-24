@@ -1,0 +1,13 @@
+{
+    "dataset": "truthfulqa",
+    "dataset_params": {
+        "split": "train",
+        "n": 100,
+        "seed": 42
+    },
+    "llm": "Qwen2.5-7B-Instruct",
+    "temperature": 0.0,
+    "max_tokens": 512,
+    "n_eval": 100,
+    "n_samples_per_eval": 1
+}
