@@ -86,7 +86,7 @@ For HuggingFace-gated models (LLaMA), set `HF_TOKEN` in `.env` or store it in `~
 
 ### 3. Prepare datasets
 
-Datasets are loaded via HuggingFace `datasets` (AQuA, LogiQA, TruthfulQA) or from a local CSV (HLE-BIO). For HLE-BIO, place the file at the path specified by the `HLE_BIO_PATH` environment variable.
+Datasets are provided in faithcot.zip
 
 ## Usage
 
