@@ -1,4 +1,4 @@
-# Faithful Chain-of-Thought Evaluation
+# FaithCoT-Bench: Benchmarking Instance-Level Faithfulness of Chain-of-Thought Reasoning (ICLR 2026)
 
 A benchmark framework for evaluating the **faithfulness** of Chain-of-Thought (CoT) reasoning in Large Language Models across multiple model families (LLaMA, GPT, Gemini, Qwen) and datasets (AQuA, LogiQA, TruthfulQA, HLE-BIO).
 
@@ -183,9 +183,11 @@ Each run produces a `results/<dataset>/<model>/<run_name>/responses/` directory 
 If you use this code, please cite:
 
 ```bibtex
-@misc{faithful_cot_eval,
-  title  = {Faithful Chain-of-Thought Evaluation},
-  year   = {2025}
+@article{shen2025faithcot,
+  title={FaithCoT-Bench: Benchmarking Instance-Level Faithfulness of Chain-of-Thought Reasoning},
+  author={Shen, Xu and Wang, Song and Tan, Zhen and Yao, Laura and Zhao, Xinyu and Xu, Kaidi and Wang, Xin and Chen, Tianlong},
+  journal={arXiv preprint arXiv:2510.04040},
+  year={2025}
 }
 ```
 
