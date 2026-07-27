@@ -6,11 +6,21 @@ A benchmark framework for evaluating the **faithfulness** of Chain-of-Thought (C
 
 This codebase measures whether a model's step-by-step CoT explanation genuinely reflects its internal reasoning process, using an Area-Under-the-Curve (AUC) faithfulness metric computed by progressively masking reasoning steps and observing shifts in answer probabilities.
 
-**Faithfulness types:**
-- **Type 1** – Correct answer, faithful CoT
-- **Type 2** – Correct answer, unfaithful CoT (post-hoc rationalization)
-- **Type 3** – Incorrect answer, faithful CoT (genuine but flawed reasoning)
-- **Type 4** – Incorrect answer, unfaithful CoT
+### Faithfulness Type Labels
+
+The released dataset encodes `faithful_type` as follows:
+
+| faithful_type | Answer correctness | Faithfulness |
+|---------------|-------------------|--------------|
+| Type 1 | Incorrect | Faithful CoT |
+| Type 2 | Incorrect | Unfaithful CoT |
+| Type 3 | Correct | Faithful CoT |
+| Type 4 | Correct | Unfaithful CoT (post-hoc rationalization) |
+
+where
+
+- `unfaithfulness = 0` indicates faithful reasoning.
+- `unfaithfulness = 1` indicates unfaithful reasoning.
 
 **Evaluation methods:**
 - Step-removal AUC (soft & hard faithfulness)
